@@ -6,9 +6,38 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <template id="sample-element-slots-template">
+            <style>
+                h1 {
+                    color: #0CDEAD;
+                }
+            </style>
+
+            <slot name="title">
+                <h1>titre vide</h1>
+            </slot>
+        </template>
+
         <sample-element title="toto">
 
         </sample-element>
+
+        <sample-element-slots>
+            <h1 slot="title">titi</h1>
+        </sample-element-slots>
+            
+        <sample-element-slots>
+            <h4 slot="title">tata</h4>
+        </sample-element-slots>
+
+        <sample-element-slots>
+            <span>tutu</span>
+        </sample-element-slots>
+
+        <sample-element-slots>
+        </sample-element-slots>
+
+        <script type="text/javascript" src="sample-slot/sample-slot.js"></script>
         <script type="text/javascript" src="sample/sample.js"></script>
     </body>
 </html>
