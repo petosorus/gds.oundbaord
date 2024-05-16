@@ -2,7 +2,7 @@ const contenuElement = document.getElementById('contenu');
 
 var contenu = [
     {
-        "titre": "fart",
+        "titre": "prout",
         "protagonistes": [
             "thomas",
             "roy de poy"
@@ -14,6 +14,11 @@ var contenu = [
 
 contenu.forEach((sound) => {
     const elem = document.createElement("sample-element-slots");
-    elem.innerHTML = `<h1 slot="title">${sound.titre}</h1>`
+    elem.setAttribute("sound", sound.chemin);
+    const titre = document.createElement('h1');
+    titre.setAttribute("slot", "title");
+    titre.innerHTML = sound.titre;
+    
+    elem.appendChild(titre);
     contenuElement.appendChild(elem)
-})
+});
