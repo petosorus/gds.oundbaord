@@ -13,31 +13,19 @@
                 }
             </style>
 
+            <button onclick="playSound()">play</button>
             <slot name="title">
                 <h1>titre vide</h1>
             </slot>
         </template>
 
-        <sample-element title="toto">
+        <div id="contenu">
 
-        </sample-element>
+        </div>
 
-        <sample-element-slots>
-            <h1 slot="title">titi</h1>
-        </sample-element-slots>
-            
-        <sample-element-slots>
-            <h4 slot="title">tata</h4>
-        </sample-element-slots>
+        <script type="text/javascript" src="components/sample-slot/sample-slot.js"></script>
+        <script type="text/javascript" src="components/sample/sample.js"></script>
 
-        <sample-element-slots>
-            <span>tutu</span>
-        </sample-element-slots>
-
-        <sample-element-slots>
-        </sample-element-slots>
-
-        <script type="text/javascript" src="sample-slot/sample-slot.js"></script>
-        <script type="text/javascript" src="sample/sample.js"></script>
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>

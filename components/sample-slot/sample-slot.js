@@ -9,6 +9,8 @@
                 const template = document.getElementById(
                     "sample-element-slots-template",
                 ).content;
+
+                var sound = this.getAttribute("sound");
                 
                 const shadowRoot = this.attachShadow({ mode: "open" });
                 shadowRoot.appendChild(template.cloneNode(true));
