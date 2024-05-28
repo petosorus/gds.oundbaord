@@ -6,10 +6,21 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+      <h1>gds.oundbaord</h1>
         <template id="m-oundbaord">
             <style>
+                :host {
+                  border: 1px solid grey;
+                  background-color: lightgrey;
+                  padding: 20px;
+                  display: flex;
+                  flex-direction: column;
+                  max-width: 200px;
+                  margin: 5px;
+                }
                 h1,::slotted(h1) {
                     color: #0CDEAD;
+                    text-align: center;
                 }
             </style>
 
