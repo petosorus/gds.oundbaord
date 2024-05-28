@@ -13,6 +13,9 @@ var contenu = [{"titre":"avions","protagonistes":["roméo","carlier","theod"],"s
 var contenuFiltrey = []
 
 function recherche(valeur) {
+    valeur = valeur.toLowerCase();
+    valeur = valeur.trim();
+    
     contenuFiltrey = [];
 
     contenu.forEach(element => {
