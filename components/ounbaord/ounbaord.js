@@ -2,12 +2,12 @@
 
 (function () {
     customElements.define(
-        "echantillon-sonore",
+        "s-ounbaord",
         class extends HTMLElement {
             constructor() {
                 super();
                 const template = document.getElementById(
-                    "echantillon-modele",
+                    "m-ounbaord",
                 ).content;
                 
                 const shadowRoot = this.attachShadow({ mode: "open" });

@@ -77,7 +77,7 @@ function afficherListe(liste) {
     contenuElement.innerHTML = "";
 
     liste.forEach((sound) => {
-        const elem = document.createElement("echantillon-sonore");
+        const elem = document.createElement("s-ounbaord");
         elem.setAttribute("sound", sound.chemin);
         const titre = document.createElement('h1');
         titre.setAttribute("slot", "title");
