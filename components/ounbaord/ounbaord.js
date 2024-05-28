@@ -4,6 +4,8 @@
     customElements.define(
         "s-ounbaord",
         class extends HTMLElement {
+            jouant = false;
+
             constructor() {
                 super();
                 const template = document.getElementById(
@@ -18,16 +20,25 @@
                 setTimeout(() => {
                     const button = this.shadowRoot.querySelectorAll(".playButton")[0];
                     button.addEventListener("click", () => {
-                        console.log('prout');
-                        this.playSound();
+                        if (!this.jouant) {
+                            this.jouerSon();
+                        }
+                    });
+                    document.addEventListener('jouant', () => { 
+                        this.jouant = true 
+                    });
+                    document.addEventListener('stoppey', () => {
+                        this.jouant = false
                     });
                 });
             }
 
-            playSound() {
+            jouerSon() {
                 const sonAttribut = this.getAttribute("sound");
                 const son = new Audio(sonAttribut);
-                son.play();
+                document.dispatchEvent(new Event('jouant'));
+                son.play()
+                son.onended = () => document.dispatchEvent(new Event('stoppey'));
             }
         },
     );
