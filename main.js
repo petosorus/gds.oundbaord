@@ -1,3 +1,5 @@
+'use strict';
+
 const poidsRecherche = {
     titre: 10,
     script: 1,
@@ -31,6 +33,13 @@ var contenu = [
         ],
         "script": "test 3 poy",
         "chemin": "samples/fart/fart.mp3"
+    }, {
+        "titre": "Coin coin",
+        "protagonistes": [
+            "canard"
+        ],
+        "script": "coin coin coin coin coin",
+        "chemin": "samples/coin_coin/coin_coin.mp3"
     }
 ];
 
