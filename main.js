@@ -43,15 +43,15 @@ function recherche(valeur) {
 function afficherListe(liste) {
     contenuElement.innerHTML = "";
 
-    liste.forEach((sound) => {
-        const elem = document.createElement("s-ounbaord");
-        elem.setAttribute("sound", sound.chemin);
+    liste.forEach((son) => {
+        const elem = document.createElement("s-oundbaord");
+        elem.setAttribute("cheminduson", son.chemin);
         const titre = document.createElement('h1');
-        titre.setAttribute("slot", "title");
-        titre.innerHTML = sound.titre;
+        titre.setAttribute("slot", "titre");
+        titre.innerHTML = son.titre;
         
         elem.appendChild(titre);
-        contenuElement.appendChild(elem)
+        contenuElement.appendChild(elem);
     });
 }
 
