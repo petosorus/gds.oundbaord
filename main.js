@@ -57,7 +57,7 @@ function recherche(valeur) {
             score += poidsRecherche.script;
         }
         
-        protagonistesFiltreys = element.protagonistes.filter(personnage => personnage.includes(valeur));
+        const protagonistesFiltreys = element.protagonistes.filter(personnage => personnage.includes(valeur));
         if (protagonistesFiltreys.length > 0) {
             score += poidsRecherche.protagonistes;
         }
