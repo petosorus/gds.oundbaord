@@ -2,14 +2,14 @@
 
 (function () {
     customElements.define(
-        "s-ounbaord",
+        "s-oundbaord",
         class extends HTMLElement {
             jouant = false;
 
             constructor() {
                 super();
                 const template = document.getElementById(
-                    "m-ounbaord",
+                    "m-oundbaord",
                 ).content;
                 
                 const shadowRoot = this.attachShadow({ mode: "open" });
@@ -18,7 +18,7 @@
 
             connectedCallback() {
                 setTimeout(() => {
-                    const button = this.shadowRoot.querySelectorAll(".playButton")[0];
+                    const button = this.shadowRoot.querySelectorAll(".boutton-lecture")[0];
                     button.addEventListener("click", () => {
                         if (!this.jouant) {
                             this.jouerSon();
@@ -34,7 +34,7 @@
             }
 
             jouerSon() {
-                const sonAttribut = this.getAttribute("sound");
+                const sonAttribut = this.getAttribute("cheminduson");
                 const son = new Audio(sonAttribut);
                 document.dispatchEvent(new Event('jouant'));
                 son.play()
