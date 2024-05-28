@@ -18,6 +18,7 @@
 
             connectedCallback() {
                 setTimeout(() => {
+
                     const button = this.shadowRoot.querySelectorAll(".boutton-lecture")[0];
                     button.addEventListener("click", () => {
                         if (!this.jouant) {
