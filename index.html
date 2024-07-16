@@ -4,33 +4,56 @@
         <meta charset="utf-8">
         <title>GDS</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+
     </head>
     <body>
-      <h1>gds.oundbaord</h1>
+      <div id="conteneur_titre"">
+        <h1>gds.oundbaord</h1>
+      </div>
         <template id="m-oundbaord">
             <style>
                 :host {
-                  border: 1px solid grey;
-                  background-color: lightgrey;
+                  border: 2px solid #FFB22C;
+                  border-radius: 3%;
+                  background-color: #FFDE4D;
                   padding: 20px;
                   display: flex;
                   flex-direction: column;
-                  max-width: 200px;
+
+                  /* a changer si besoin */
+                  height:150px;
+                  width: 200px;
                   margin: 5px;
                 }
                 h1,::slotted(h1) {
-                    color: #0CDEAD;
+                    color: #FF4C4C;
                     text-align: center;
+                }
+                :host button {
+                     background-color: #FFB22C;
+                     transition:1s;
+                }
+
+                :host button:hover {
+                    background-color: #FF4C4C;
+                    transition:1s;
                 }
             </style>
 
-            <button class="boutton-lecture">lecture</button>
+            <button class="boutton-lecture"><img src="./logo.png" width="20px"></button>
             <slot name="titre">
                 <h1>titre vide</h1>
             </slot>
         </template>
 
-        <input type="text" id="recherche"/>
+        <div id="contenu_recherche">
+            <input type="text" id="recherche" placeholder="Recherche"/>
+        </div>
 
         <div id="contenu">
 
