@@ -35,8 +35,11 @@ h1 {
 }
 
 #contenu {
+  margin: 1%;
+  /* margin-left: 2%;
+  margin-right: 2%; */
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 100%;
 }
