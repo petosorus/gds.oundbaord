@@ -1,6 +1,41 @@
+body{
+  margin:0;
+}
+
+h1 {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#conteneur_titre{
+  display: grid;
+  place-items: center;
+  background-color: #F3FEB8;
+  color:#FFB22C;
+  font-size: 3em;
+}
+
+
+#contenu_recherche{
+  display: grid;
+  place-items: center;
+  background-color: #73BBA3;
+  height: 5em;
+}
+
+#contenu_recherche input[type=text] {
+  transition:2s;
+  height:3em;
+  width:10%;
+}
+
+#contenu_recherche input[type=text]:focus, #contenu_recherche input[type=text]:hover  {
+  background-color: #B4E380;
+}
+
 #contenu {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   max-width: 100%;
