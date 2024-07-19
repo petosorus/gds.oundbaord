@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>GDS</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="assets/style/style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +37,12 @@
                 :host button {
                      background-color: #FFB22C;
                      transition:1s;
+                     display: flex;
+                     justify-content: center;
+                }
+
+                .stop {
+                    display: none;
                 }
 
                 :host button:hover {
@@ -45,7 +51,10 @@
                 }
             </style>
 
-            <button class="boutton-lecture"><img src="./logo.png" width="20px"></button>
+            <button class="boutton-lecture">
+                <img class="play" src="assets/images/play-button.svg" width="20px">
+                <img class="stop" src="assets/images/stop-button.svg" width="20px">
+            </button>
             <slot name="titre">
                 <h1>titre vide</h1>
             </slot>
