@@ -72,6 +72,8 @@ function installation() {
     merdierElement.addEventListener('change', () => {
         document.merdier = merdierElement.checked
     })
+
+    document.getElementById('normal').checked = true
 }
 
 installation();
