@@ -55,6 +55,7 @@
             jouerSon() {
                 const sonAttribut = this.getAttribute("cheminduson");
                 this.son = new Audio(sonAttribut);
+                this.son.playbackRate = document.querySelector('input[name="vitesse"]:checked').value;
                 document.dispatchEvent(new Event('jouant'));
                 this.son.play()
                 this.son.onended = () => {
