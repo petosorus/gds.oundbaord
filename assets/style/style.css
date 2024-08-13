@@ -1,11 +1,11 @@
 body{
   margin:0;
+  font-family: "Black Ops One", system-ui;
+  font-style: normal;
 }
 
 h1 {
-  font-family: "Black Ops One", system-ui;
   font-weight: 400;
-  font-style: normal;
 }
 
 #conteneur_titre{
@@ -18,8 +18,10 @@ h1 {
 
 
 #contenu_recherche{
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFB22C;
   background-color: #73BBA3;
   height: 5em;
 }

@@ -39,11 +39,15 @@
                             this.apresArretSon()
                         }
                     });
-                    document.addEventListener('jouant', () => { 
-                        this.jouant = true 
+                    document.addEventListener('jouant', () => {
+                        if (!document.merdier) {
+                            this.jouant = true 
+                        }
                     });
                     document.addEventListener('stoppey', () => {
-                        this.jouant = false
+                        if (!document.merdier) {
+                            this.jouant = false
+                        }
                     });
                 });
             }

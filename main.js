@@ -67,6 +67,11 @@ function installation() {
 
         afficherListe(contenuFiltrey);
     });
+
+    const merdierElement = document.getElementById('merdier')
+    merdierElement.addEventListener('change', () => {
+        document.merdier = merdierElement.checked
+    })
 }
 
 installation();
