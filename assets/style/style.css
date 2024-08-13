@@ -8,6 +8,13 @@ h1 {
   font-weight: 400;
 }
 
+#tetier {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+
 #conteneur_titre{
   display: grid;
   place-items: center;
@@ -37,6 +44,7 @@ h1 {
 }
 
 #contenu {
+  padding-top: 330px;
   margin: 1%;
   /* margin-left: 2%;
   margin-right: 2%; */

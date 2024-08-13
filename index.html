@@ -12,24 +12,33 @@
 
     </head>
     <body>
-      <div id="conteneur_titre"">
-        <h1>gds.oundbaord</h1>
-      </div>
+        <div id="tetier">
+            <div id="conteneur_titre">
+                <h1>gds.oundbaord</h1>
+            </div>
+            
+            <div id="contenu_recherche">
+                <input type="text" id="recherche" placeholder="Recherche"/>
+                <input type="checkbox" id="merdier"/>
+                <label for="merdier">Mode merdier</label>
+            </div>
+        </div>
+
         <template id="m-oundbaord">
             <style>
                 :host {
-                  border: 2px solid #FFB22C;
-                  border-radius: 3%;
-                  background-color: #FFDE4D;
-                  padding: 20px;
-                  display: flex;
-                  flex-direction: column;
+                    border: 2px solid #FFB22C;
+                    border-radius: 3%;
+                    background-color: #FFDE4D;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
 
-                  /* a changer si besoin */
-                  height:150px;
-                  width: 200px;
-                  margin: auto;
-                  margin-top: 15px;
+                    /* a changer si besoin */
+                    height:150px;
+                    width: 200px;
+                    margin: auto;
+                    margin-top: 15px;
                 }
                 h1,::slotted(h1) {
                     color: #FF4C4C;
@@ -37,10 +46,10 @@
                     text-transform: capitalize;
                 }
                 :host button {
-                     background-color: #FFB22C;
-                     transition:1s;
-                     display: flex;
-                     justify-content: center;
+                        background-color: #FFB22C;
+                        transition:1s;
+                        display: flex;
+                        justify-content: center;
                 }
 
                 .stop {
@@ -62,16 +71,10 @@
             </slot>
         </template>
 
-        <div id="contenu_recherche">
-            <input type="text" id="recherche" placeholder="Recherche"/>
-            <input type="checkbox" id="merdier"/>
-            <label for="merdier">Mode merdier</label>
-        </div>
-
         <div id="contenu">
 
         </div>
-
+            
         <script type="text/javascript" src="components/oundbaord/oundbaord.js"></script>
 
         <script type="text/javascript" src="main.js"></script>
